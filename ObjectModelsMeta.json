@@ -1,0 +1,29 @@
+{
+    "services": [
+        {
+            "serviceId": "c2346308-f111-410d-af57-34dea1f9a1d0",
+            "serviceName": "CoopAppObjectService",
+            "serviceETag": "0a277ce2-b3d2-495d-975c-9375e8701af1",
+            "objects": [
+                {
+                    "objectId": "160",
+                    "objectName": "customer",
+                    "objectETag": "270661c7-4a70-4cf8-ada7-06255f0b8cb9"
+                },
+                {
+                    "objectId": "161",
+                    "objectName": "account",
+                    "objectETag": "743b4b40-3c7b-4afc-bb89-c0b9e4dec636"
+                },
+                {
+                    "objectId": "162",
+                    "objectName": "transaction",
+                    "objectETag": "c2af1d86-f05b-446e-9285-7e03b3e79c01"
+                }
+            ]
+        }
+    ],
+    "appInfo": {
+        "serviceDocEtag": "00000194F4BDE040"
+    }
+}

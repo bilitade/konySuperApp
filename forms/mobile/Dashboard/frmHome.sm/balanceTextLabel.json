@@ -17,11 +17,11 @@
         0,
         0
     ],
-    "_skin_": "se064cd9e4bf45cb9456e957cdf648ef",
-    "_text_": "John Doe",
+    "_skin_": "s7dcec0962e64667afc9acf246429d79",
+    "_text_": "Balance",
     "_top_": {
         "type": "string",
-        "value": "54dp"
+        "value": "96dp"
     },
     "_width_": {
         "type": "ref",
@@ -41,7 +41,7 @@
     },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "totalBalanceLabel",
+    "id": "balanceTextLabel",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,7 +55,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ea6868851e1447cfa9c2454a34f889e7",
+    "kuid": "d7ce48a6bf674270ae3ab864007451e4",
     "name": "kony.ui.Label",
     "parent": "balanceCardContainer",
     "pf": "frmHome",

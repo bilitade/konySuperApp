@@ -40,8 +40,8 @@
     },
     "children": [
         "greatingLabel",
-        "totalBalanceLabel",
         "customerNameLabel",
+        "balanceTextLabel",
         "balanceContainer"
     ],
     "clipbounds": false,

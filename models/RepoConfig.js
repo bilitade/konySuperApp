@@ -1,0 +1,1 @@
+{"table":"account","db":"CoopAppObjectService","verbs":"true"},{"table":"transaction","db":"CoopAppObjectService"},{"table":"customer","db":"CoopAppObjectService","verbs":"true"}
