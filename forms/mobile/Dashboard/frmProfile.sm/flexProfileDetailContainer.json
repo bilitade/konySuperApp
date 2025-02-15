@@ -1,0 +1,64 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "47.62%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sa524f0fc6cc470d98269fac8d1dfcb7",
+    "_top_": {
+        "type": "string",
+        "value": "37.92%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "Label0a5c39887d9244d",
+        "Label0be97ac457b634f",
+        "Label0ef4e4dce8e5b47",
+        "Label0j6ea9f9bf35844",
+        "Label0gc82d0c3711a4a",
+        "Button0e3d828c64bb94d"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flexProfileDetailContainer",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e944f1270c404b28bddd2f751556f1f8",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "frmProfile",
+    "pf": "frmProfile",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

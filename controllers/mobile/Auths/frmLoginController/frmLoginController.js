@@ -5,6 +5,10 @@ define({
         if (params && params.authErrorResponse) {
             alert("Login failed: " + JSON.stringify(params.authErrorResponse));
         }
+      if (params && params.logoutMessage) {
+            alert("Logged out " + JSON.stringify(params.logoutMessage));
+        }
+
 
         kony.print("Exiting frmLoginController.onNavigate");
     },

@@ -21,7 +21,7 @@
         1,
         3
     ],
-    "_skin_": "s335a42835254d538f7887929369d0b5",
+    "_skin_": "s6de25b29fa44d729856c28f99af414a",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
@@ -39,7 +39,9 @@
     },
     "canUpdateUI": true,
     "children": [
-        "BottomNavigationBar"
+        "BottomNavigationBar",
+        "flexProfileImageContainer",
+        "flexProfileDetailContainer"
     ],
     "containerweight": 100,
     "controllerInfo": {

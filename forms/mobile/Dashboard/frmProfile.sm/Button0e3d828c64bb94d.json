@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "57dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sdcd094efd664a7d899878a22b21b08e",
+    "_text_": "Sign Out",
+    "_top_": {
+        "type": "string",
+        "value": "84dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "seacb505e28342e3b93456eaa278fd5c",
+    "id": "Button0e3d828c64bb94d",
+    "ide_onClick": "AS_Button_a88dbdacde964d0082e3cdcbc73189cf",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "bac9da9e9f8142049b26c75e344bad5f",
+    "name": "kony.ui.Button",
+    "parent": "flexProfileDetailContainer",
+    "pf": "frmProfile",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

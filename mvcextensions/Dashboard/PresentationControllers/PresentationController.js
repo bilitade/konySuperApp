@@ -65,6 +65,21 @@ define([], function () {
   PresentationController.prototype.handleError = function (error) {
     kony.print("❌ Error in Dashboard Flow: " + JSON.stringify(error));
   };
+  
+  PresentationController.prototype.logout =function (){
+    if (kony.store.getItem("userid")){
+      kony.store.removeItem("userid");
+    }
+    
+    var navigationObject = new kony.mvc.Navigation("frmLogin");
+        navigationObject.navigate({
+            "logoutMessage": "Successfully Logged out"
+        });
+    
+    
+    
+  };
+  
 
   return PresentationController;
 });

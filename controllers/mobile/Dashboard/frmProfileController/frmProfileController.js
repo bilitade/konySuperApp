@@ -1,5 +1,20 @@
 define({ 
 
- //Type your controller code here 
+
+  
+  logout: function (){
+    
+    var dashboardModule = kony.mvc.MDAApplication
+      .getSharedInstance()
+      .getModuleManager()
+      .getModule("Dashboard");
+    
+     var dashboardPresentationController =
+          dashboardModule.presentationController;
+      dashboardPresentationController.logout();
+
+    
+ 
+  }
 
  });
