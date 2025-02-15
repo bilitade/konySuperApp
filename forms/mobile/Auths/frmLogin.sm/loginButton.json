@@ -41,6 +41,7 @@
     "displaytext": true,
     "focusskin": "sf71d18f10d74eee81c85fb177dd2fb7",
     "id": "loginButton",
+    "ide_onClick": "AS_Button_f8aad3718ae548199798902701feb753",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

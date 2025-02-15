@@ -1,0 +1,99 @@
+{
+  "operationConfig" : {
+    "name" : "coopappdatabase_customer_get9094",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "public",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <exec-function name=\"kony.string:concat\" output=\"$vars\" outputpath=\"result2\">\n            <set-arg name=\"input1\" input=\"userid eq\"/>\n            <set-arg inputpath=\"userid\"/>\n        </exec-function>\n        <set-param inputpath=\"$vars/result2\" outputpath=\"$filter\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"customer\" outputpath=\"customer\">\n            <set-param inputpath=\"customer_id\" outputpath=\"customer_id\"/>\n            <set-param inputpath=\"customer_level\" outputpath=\"customer_level\"/>\n            <set-param inputpath=\"customer_name\" outputpath=\"customer_name\"/>\n            <set-param inputpath=\"customer_type\" outputpath=\"customer_type\"/>\n            <set-param inputpath=\"userid\" outputpath=\"userid\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"customer\",\"xy\":\"170.6097585737735 92.89318669869877\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"coopappDBIntegrationService (1.0).coopappdatabase_customer_get\",\"xy\":\"770 100\"},{\"key\":\"block:kony.util:constant:1\",\"name\":\"kony.basic:constant\",\"text\":\"Constant\",\"category\":\"functionTemplateConstant\",\"outPortId\":\"userid eq\",\"outPortText\":\"value\",\"loc\":\"253 378\",\"visible\":true},{\"key\":\"block:kony.string:concat:2\",\"name\":\"kony.string:stringConcatenate\",\"text\":\"String Concatenate\",\"category\":\"functionTemplateNTo1\",\"outPortId\":\"result2\",\"outPortText\":\"result\",\"valueArray\":[{\"inPortId\":\"input1\",\"inPortText\":\"value\",\"__gohashid\":50892},{\"inPortId\":\"input2\",\"inPortText\":\"value\",\"__gohashid\":51352}],\"loc\":\"493.6951338435356 297.0210086534552\",\"visible\":true}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"block:kony.util:constant:1\",\"to\":\"block:kony.string:concat:2\",\"fromPort\":\"userid eq\",\"toPort\":\"input1\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"block:kony.string:concat:2\",\"to\":\"target:$filter:\",\"fromPort\":\"result2\",\"toPort\":\"target:$filter:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:customer:userid:\",\"to\":\"block:kony.string:concat:2\",\"fromPort\":\"source:customer:userid:\",\"toPort\":\"input2\"}],\"blockCount\":{\"variableCount\":2,\"constant\":1,\"stringConcatenate\":2},\"variableMap\":{\"result1\":true,\"result2\":true},\"xmlMappingOverride\":false}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"customer\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"coopappDBIntegrationService (1.0).coopappdatabase_customer_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:account:account_balance:\",\"to\":\"target:account:account_balance:\",\"fromPort\":\"source:account:account_balance:\",\"toPort\":\"target:account:account_balance:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_created_at:\",\"to\":\"target:account:account_created_at:\",\"fromPort\":\"source:account:account_created_at:\",\"toPort\":\"target:account:account_created_at:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_id:\",\"to\":\"target:account:account_id:\",\"fromPort\":\"source:account:account_id:\",\"toPort\":\"target:account:account_id:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_type:\",\"to\":\"target:account:account_type:\",\"fromPort\":\"source:account:account_type:\",\"toPort\":\"target:account:account_type:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:customer_id:\",\"to\":\"target:account:customer_id:\",\"fromPort\":\"source:account:customer_id:\",\"toPort\":\"target:account:customer_id:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:customer:customer_id:\",\"to\":\"target:customer:customer_id:\",\"fromPort\":\"source:customer:customer_id:\",\"toPort\":\"target:customer:customer_id:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:customer:customer_level:\",\"to\":\"target:customer:customer_level:\",\"fromPort\":\"source:customer:customer_level:\",\"toPort\":\"target:customer:customer_level:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:customer:customer_name:\",\"to\":\"target:customer:customer_name:\",\"fromPort\":\"source:customer:customer_name:\",\"toPort\":\"target:customer:customer_name:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:customer:customer_type:\",\"to\":\"target:customer:customer_type:\",\"fromPort\":\"source:customer:customer_type:\",\"toPort\":\"target:customer:customer_type:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:customer:userid:\",\"to\":\"target:customer:userid:\",\"fromPort\":\"source:customer:userid:\",\"toPort\":\"target:customer:userid:\",\"visible\":true,\"common\":true}]}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "coopappDBIntegrationService",
+      "serviceVersion" : "1.0",
+      "operationName" : "coopappdatabase_customer_get"
+    },
+    "relationshipHierarchyMapping" : {
+      "name" : "customer",
+      "children" : [ ],
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <exec-function name=\"kony.string:concat\" output=\"$vars\" outputpath=\"result2\">\n            <set-arg name=\"input1\" input=\"userid eq\"/>\n            <set-arg inputpath=\"userid\"/>\n        </exec-function>\n        <set-param inputpath=\"$vars/result2\" outputpath=\"$filter\"/>\n    </map>\n</mapper>\n",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"customer\" outputpath=\"customer\">\n            <set-param inputpath=\"customer_id\" outputpath=\"customer_id\"/>\n            <set-param inputpath=\"customer_level\" outputpath=\"customer_level\"/>\n            <set-param inputpath=\"customer_name\" outputpath=\"customer_name\"/>\n            <set-param inputpath=\"customer_type\" outputpath=\"customer_type\"/>\n            <set-param inputpath=\"userid\" outputpath=\"userid\"/>\n        </map>\n    </map>\n</mapper>\n",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"customer\",\"xy\":\"170.6097585737735 92.89318669869877\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"coopappDBIntegrationService (1.0).coopappdatabase_customer_get\",\"xy\":\"770 100\"},{\"key\":\"block:kony.util:constant:1\",\"name\":\"kony.basic:constant\",\"text\":\"Constant\",\"category\":\"functionTemplateConstant\",\"outPortId\":\"userid eq\",\"outPortText\":\"value\",\"loc\":\"253 378\",\"visible\":true},{\"key\":\"block:kony.string:concat:2\",\"name\":\"kony.string:stringConcatenate\",\"text\":\"String Concatenate\",\"category\":\"functionTemplateNTo1\",\"outPortId\":\"result2\",\"outPortText\":\"result\",\"valueArray\":[{\"inPortId\":\"input1\",\"inPortText\":\"value\",\"__gohashid\":50892},{\"inPortId\":\"input2\",\"inPortText\":\"value\",\"__gohashid\":51352}],\"loc\":\"493.6951338435356 297.0210086534552\",\"visible\":true}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"block:kony.util:constant:1\",\"to\":\"block:kony.string:concat:2\",\"fromPort\":\"userid eq\",\"toPort\":\"input1\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"block:kony.string:concat:2\",\"to\":\"target:$filter:\",\"fromPort\":\"result2\",\"toPort\":\"target:$filter:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:customer:userid:\",\"to\":\"block:kony.string:concat:2\",\"fromPort\":\"source:customer:userid:\",\"toPort\":\"input2\"}],\"blockCount\":{\"variableCount\":2,\"constant\":1,\"stringConcatenate\":2},\"variableMap\":{\"result1\":true,\"result2\":true},\"xmlMappingOverride\":false}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"customer\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"coopappDBIntegrationService (1.0).coopappdatabase_customer_get\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:account:account_balance:\",\"to\":\"target:account:account_balance:\",\"fromPort\":\"source:account:account_balance:\",\"toPort\":\"target:account:account_balance:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_created_at:\",\"to\":\"target:account:account_created_at:\",\"fromPort\":\"source:account:account_created_at:\",\"toPort\":\"target:account:account_created_at:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_id:\",\"to\":\"target:account:account_id:\",\"fromPort\":\"source:account:account_id:\",\"toPort\":\"target:account:account_id:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_type:\",\"to\":\"target:account:account_type:\",\"fromPort\":\"source:account:account_type:\",\"toPort\":\"target:account:account_type:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:customer_id:\",\"to\":\"target:account:customer_id:\",\"fromPort\":\"source:account:customer_id:\",\"toPort\":\"target:account:customer_id:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:customer:customer_id:\",\"to\":\"target:customer:customer_id:\",\"fromPort\":\"source:customer:customer_id:\",\"toPort\":\"target:customer:customer_id:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:customer:customer_level:\",\"to\":\"target:customer:customer_level:\",\"fromPort\":\"source:customer:customer_level:\",\"toPort\":\"target:customer:customer_level:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:customer:customer_name:\",\"to\":\"target:customer:customer_name:\",\"fromPort\":\"source:customer:customer_name:\",\"toPort\":\"target:customer:customer_name:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:customer:customer_type:\",\"to\":\"target:customer:customer_type:\",\"fromPort\":\"source:customer:customer_type:\",\"toPort\":\"target:customer:customer_type:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:customer:userid:\",\"to\":\"target:customer:userid:\",\"fromPort\":\"source:customer:userid:\",\"toPort\":\"target:customer:userid:\",\"visible\":true,\"common\":true}]}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

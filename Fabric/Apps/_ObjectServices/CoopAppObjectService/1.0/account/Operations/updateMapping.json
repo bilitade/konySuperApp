@@ -1,0 +1,54 @@
+{
+  "operationConfig" : {
+    "name" : "coopappdatabase_account_update6963",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "public",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"account_balance\" outputpath=\"account_balance\"/>\n        <set-param inputpath=\"account_created_at\" outputpath=\"account_created_at\"/>\n        <set-param inputpath=\"account_id\" outputpath=\"account_id\"/>\n        <set-param inputpath=\"account_type\" outputpath=\"account_type\"/>\n        <set-param inputpath=\"customer_id\" outputpath=\"customer_id\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"account\" outputpath=\"account\">\n            <set-param inputpath=\"account_balance\" outputpath=\"account_balance\"/>\n            <set-param inputpath=\"account_created_at\" outputpath=\"account_created_at\"/>\n            <set-param inputpath=\"account_id\" outputpath=\"account_id\"/>\n            <set-param inputpath=\"account_type\" outputpath=\"account_type\"/>\n            <set-param inputpath=\"customer_id\" outputpath=\"customer_id\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"account\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"coopappDBIntegrationService (1.0).coopappdatabase_account_update\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:account:account_balance:\",\"to\":\"target:account_balance:\",\"fromPort\":\"source:account:account_balance:\",\"toPort\":\"target:account_balance:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_created_at:\",\"to\":\"target:account_created_at:\",\"fromPort\":\"source:account:account_created_at:\",\"toPort\":\"target:account_created_at:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_id:\",\"to\":\"target:account_id:\",\"fromPort\":\"source:account:account_id:\",\"toPort\":\"target:account_id:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_type:\",\"to\":\"target:account_type:\",\"fromPort\":\"source:account:account_type:\",\"toPort\":\"target:account_type:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:customer_id:\",\"to\":\"target:customer_id:\",\"fromPort\":\"source:account:customer_id:\",\"toPort\":\"target:customer_id:\",\"visible\":true,\"common\":true}]}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"account\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"coopappDBIntegrationService (1.0).coopappdatabase_account_update\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:account:account_balance:\",\"to\":\"target:account:account_balance:\",\"fromPort\":\"source:account:account_balance:\",\"toPort\":\"target:account:account_balance:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_created_at:\",\"to\":\"target:account:account_created_at:\",\"fromPort\":\"source:account:account_created_at:\",\"toPort\":\"target:account:account_created_at:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_id:\",\"to\":\"target:account:account_id:\",\"fromPort\":\"source:account:account_id:\",\"toPort\":\"target:account:account_id:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_type:\",\"to\":\"target:account:account_type:\",\"fromPort\":\"source:account:account_type:\",\"toPort\":\"target:account:account_type:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:customer_id:\",\"to\":\"target:account:customer_id:\",\"fromPort\":\"source:account:customer_id:\",\"toPort\":\"target:account:customer_id:\",\"visible\":true,\"common\":true}]}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "coopappDBIntegrationService",
+      "serviceVersion" : "1.0",
+      "operationName" : "coopappdatabase_account_update"
+    },
+    "relationshipHierarchyMapping" : {
+      "name" : "account",
+      "children" : [ ],
+      "actions" : {
+        "create" : true,
+        "update" : true,
+        "partialupdate" : true,
+        "delete" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"account_balance\" outputpath=\"account_balance\"/>\n        <set-param inputpath=\"account_created_at\" outputpath=\"account_created_at\"/>\n        <set-param inputpath=\"account_id\" outputpath=\"account_id\"/>\n        <set-param inputpath=\"account_type\" outputpath=\"account_type\"/>\n        <set-param inputpath=\"customer_id\" outputpath=\"customer_id\"/>\n    </map>\n</mapper>\n",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"account\" outputpath=\"account\">\n            <set-param inputpath=\"account_balance\" outputpath=\"account_balance\"/>\n            <set-param inputpath=\"account_created_at\" outputpath=\"account_created_at\"/>\n            <set-param inputpath=\"account_id\" outputpath=\"account_id\"/>\n            <set-param inputpath=\"account_type\" outputpath=\"account_type\"/>\n            <set-param inputpath=\"customer_id\" outputpath=\"customer_id\"/>\n        </map>\n    </map>\n</mapper>\n",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"account\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"coopappDBIntegrationService (1.0).coopappdatabase_account_update\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:account:account_balance:\",\"to\":\"target:account_balance:\",\"fromPort\":\"source:account:account_balance:\",\"toPort\":\"target:account_balance:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_created_at:\",\"to\":\"target:account_created_at:\",\"fromPort\":\"source:account:account_created_at:\",\"toPort\":\"target:account_created_at:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_id:\",\"to\":\"target:account_id:\",\"fromPort\":\"source:account:account_id:\",\"toPort\":\"target:account_id:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_type:\",\"to\":\"target:account_type:\",\"fromPort\":\"source:account:account_type:\",\"toPort\":\"target:account_type:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:customer_id:\",\"to\":\"target:customer_id:\",\"fromPort\":\"source:account:customer_id:\",\"toPort\":\"target:customer_id:\",\"visible\":true,\"common\":true}]}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"account\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"coopappDBIntegrationService (1.0).coopappdatabase_account_update\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:account:account_balance:\",\"to\":\"target:account:account_balance:\",\"fromPort\":\"source:account:account_balance:\",\"toPort\":\"target:account:account_balance:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_created_at:\",\"to\":\"target:account:account_created_at:\",\"fromPort\":\"source:account:account_created_at:\",\"toPort\":\"target:account:account_created_at:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_id:\",\"to\":\"target:account:account_id:\",\"fromPort\":\"source:account:account_id:\",\"toPort\":\"target:account:account_id:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:account_type:\",\"to\":\"target:account:account_type:\",\"fromPort\":\"source:account:account_type:\",\"toPort\":\"target:account:account_type:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:account:customer_id:\",\"to\":\"target:account:customer_id:\",\"fromPort\":\"source:account:customer_id:\",\"toPort\":\"target:account:customer_id:\",\"visible\":true,\"common\":true}]}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "etag" : "53187b1b-16c4-4a04-bd0e-40da08edc2c2",
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

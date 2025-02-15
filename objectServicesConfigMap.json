@@ -1,0 +1,23 @@
+{
+    "CoopAppObjectService_customer": {
+        "servicename": "CoopAppObjectService",
+        "serviceid": "c2346308-f111-410d-af57-34dea1f9a1d0",
+        "type": "objectsvcs",
+        "objectname": "customer",
+        "objectid": "160"
+    },
+    "CoopAppObjectService_account": {
+        "servicename": "CoopAppObjectService",
+        "serviceid": "c2346308-f111-410d-af57-34dea1f9a1d0",
+        "type": "objectsvcs",
+        "objectname": "account",
+        "objectid": "161"
+    },
+    "CoopAppObjectService_transaction": {
+        "servicename": "CoopAppObjectService",
+        "serviceid": "c2346308-f111-410d-af57-34dea1f9a1d0",
+        "type": "objectsvcs",
+        "objectname": "transaction",
+        "objectid": "162"
+    }
+}

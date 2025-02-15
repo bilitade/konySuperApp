@@ -15,9 +15,85 @@ define([], function() {
      * This method gets called when presentation controller gets initialized
      * @method
      */
-    PresentationController.prototype.initializePresentationController = function() {
+    PresentationController.prototype.initializePresentationController 
+      = function() {
         
     };
+  
+  
+    PresentationController.prototype.authenticateUser =
+      function (username, password) {
+      
+        kony.print("Entering Authentication."+
+                   "PresentationController.authenticateUser");
+
+      
+        var callbacks = {
+            "success": this.authSuccessCallback,
+          
+            "error": this.authErrorCallback
+        };
+
+        var authManager = kony.mvc.MDAApplication
+                                 .getSharedInstance()
+                                 .getModuleManager()
+                                 .getModule("AuthManager");
+
+        var authBusinessController = authManager.businessController;
+
+        authBusinessController.authenticateUser(username, password, callbacks);
+
+        kony.print("Exiting Authentication."+
+                   "PresentationController.authenticateUser");
+    };
+
+  
+    PresentationController.prototype.authSuccessCallback = function (response) {
+    kony.print("Authentication Success");
+
+    // Ensure user ID is retrieved from store before navigating
+    var userid = kony.store.getItem("userid");
+
+    if (!userid) {
+        kony.print("Warning: User ID not found in store!");
+    } else {
+        kony.print("User ID retrieved: " + userid);
+    }
+
+    var navigationObject = new kony.mvc.Navigation("frmHome");
+    navigationObject.navigate({
+        "authSuccessResponse": response,
+      
+        "userid": userid
+    });
+};
+
+
+    PresentationController.prototype.authErrorCallback = function (response) {
+        kony.print("Authentication Failed");
+
+        var navigationObject = new kony.mvc.Navigation("frmLogin");
+        navigationObject.navigate({
+            "authErrorResponse": response
+        });
+    };
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
     return PresentationController;
 });

@@ -51,6 +51,7 @@
     "device": "iPhone13",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "friendlyName": "frmLogin",
     "id": "frmLogin",
     "info": null,
     "initdone": false,

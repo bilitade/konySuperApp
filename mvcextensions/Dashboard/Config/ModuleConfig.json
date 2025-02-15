@@ -11,7 +11,8 @@
                 "ControllerExtensions": [],
                 "FormController": "kony.mvc.MDAFormController",
                 "Controller": "Dashboard/frmHomeController",
-                "FormName": "Dashboard/frmHome"
+                "FormName": "Dashboard/frmHome",
+                "friendlyName": "frmHome"
             },
             "frmProfile": {
                 "ControllerExtensions": [],

@@ -282,6 +282,7 @@
     "enableCordova": false,
     "enableCustomData": false,
     "enableIdForAutomation": false,
+    "enableJasmineAutomation": true,
     "enableMVCExtensions": true,
     "enableOfflineObjects": "false",
     "enableOfflineObjectsDW": "false",
@@ -367,6 +368,14 @@
     "keyAliasandwear": "",
     "keyStoreFilePath": "",
     "keyStoreFilePathandwear": "",
+    "kfAppInfo": {
+        "29045be2-ecdb-4a0b-9778-6812fad72367": {
+            "appName": "COOPAPP",
+            "baseId": "36a13215-a4b6-4cbc-b0f0-2bfafa4ef0d4",
+            "id": "36a13215-a4b6-4cbc-b0f0-2bfafa4ef0d4",
+            "version": "1.0"
+        }
+    },
     "konyVizVersion": "9.7.52",
     "lastmodifiedtime": "1739590049934",
     "location": "false",
@@ -679,7 +688,7 @@
     "spawindows480basefontsize": "12",
     "spawindowstabbasefontsize": "17",
     "splashlogokey": "",
-    "startupformkey": "b36c620033c34c6b8031aa4c4ccb218a",
+    "startupformkey": "c40ca86ea6234be0857854205c125b6d",
     "statusBarHidden": "false",
     "statusBarStyle": "STATUS_BAR_STYLE_DEFAULT",
     "support32bit": "false",
