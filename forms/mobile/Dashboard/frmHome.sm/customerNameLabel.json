@@ -18,10 +18,10 @@
         0
     ],
     "_skin_": "se064cd9e4bf45cb9456e957cdf648ef",
-    "_text_": "John Doe",
+    "_text_": "Customer Name",
     "_top_": {
         "type": "string",
-        "value": "54dp"
+        "value": "8%"
     },
     "_width_": {
         "type": "ref",

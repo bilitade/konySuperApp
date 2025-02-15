@@ -52,7 +52,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "j2d8fe0f39f04e00990566cd76166150",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "homeFlexScrollContainer",
     "pf": "frmHome",

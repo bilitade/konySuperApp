@@ -21,7 +21,7 @@
     "_text_": "Balance",
     "_top_": {
         "type": "string",
-        "value": "96dp"
+        "value": "8%"
     },
     "_width_": {
         "type": "ref",

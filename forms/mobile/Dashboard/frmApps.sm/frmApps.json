@@ -15,6 +15,12 @@
         0
     ],
     "_percent_": true,
+    "_pxMenuIndex": [
+        0,
+        1,
+        1,
+        0
+    ],
     "_skin_": "s335a42835254d538f7887929369d0b5",
     "_title_": null,
     "addWidgetsdone": false,
@@ -32,7 +38,9 @@
         }
     },
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "BottomNavigationBar"
+    ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
@@ -47,6 +55,7 @@
     "device": "iPhone13",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "friendlyName": "frmApps",
     "id": "frmApps",
     "info": null,
     "initdone": false,

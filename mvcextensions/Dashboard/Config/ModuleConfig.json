@@ -18,19 +18,22 @@
                 "ControllerExtensions": [],
                 "FormController": "kony.mvc.MDAFormController",
                 "Controller": "Dashboard/frmProfileController",
-                "FormName": "Dashboard/frmProfile"
+                "FormName": "Dashboard/frmProfile",
+                "friendlyName": "frmProfile"
             },
             "frmPay": {
                 "ControllerExtensions": [],
                 "FormController": "kony.mvc.MDAFormController",
                 "Controller": "Dashboard/frmPayController",
-                "FormName": "Dashboard/frmPay"
+                "FormName": "Dashboard/frmPay",
+                "friendlyName": "frmPay"
             },
             "frmApps": {
                 "ControllerExtensions": [],
                 "FormController": "kony.mvc.MDAFormController",
                 "Controller": "Dashboard/frmAppsController",
-                "FormName": "Dashboard/frmApps"
+                "FormName": "Dashboard/frmApps",
+                "friendlyName": "frmApps"
             }
         }
     },
