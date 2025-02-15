@@ -1,0 +1,38 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "Dashboard/PresentationControllers/PresentationController"
+        }
+    },
+    "Forms": {
+        "mobile": {
+            "frmHome": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "Dashboard/frmHomeController",
+                "FormName": "Dashboard/frmHome"
+            },
+            "frmProfile": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "Dashboard/frmProfileController",
+                "FormName": "Dashboard/frmProfile"
+            },
+            "frmPay": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "Dashboard/frmPayController",
+                "FormName": "Dashboard/frmPay"
+            },
+            "frmApps": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "Dashboard/frmAppsController",
+                "FormName": "Dashboard/frmApps"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "Dashboard"
+}

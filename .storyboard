@@ -1,0 +1,50 @@
+{
+    "models": {
+        "mobile": {
+            "class": "GraphLinksModel",
+            "linkDataArray": [],
+            "nodeDataArray": [
+                {
+                    "formKUID": "ia2408a521944df8834746d4c02a2241",
+                    "formName": "frmLogin",
+                    "isStartupForm": false,
+                    "key": "ia2408a521944df8834746d4c02a2241",
+                    "loc": "8 24.7544921875",
+                    "thumbnailURL": "/assets/SuperApp/forms/mobile/Auth/frmLogin.sm/.thumbs/default.jpeg"
+                },
+                {
+                    "formKUID": "eb6cd9ca9c6a4ea3afc3df6369a58d1c",
+                    "formName": "frmApps",
+                    "isStartupForm": false,
+                    "key": "eb6cd9ca9c6a4ea3afc3df6369a58d1c",
+                    "loc": "8 1824.7544921875",
+                    "thumbnailURL": null
+                },
+                {
+                    "formKUID": "b36c620033c34c6b8031aa4c4ccb218a",
+                    "formName": "frmHome",
+                    "isStartupForm": true,
+                    "key": "b36c620033c34c6b8031aa4c4ccb218a",
+                    "loc": "188 184.7544921875",
+                    "thumbnailURL": null
+                },
+                {
+                    "formKUID": "ce0e6329647646e181d8fd99c2e68e2a",
+                    "formName": "frmPay",
+                    "isStartupForm": false,
+                    "key": "ce0e6329647646e181d8fd99c2e68e2a",
+                    "loc": "8 1224.7544921875",
+                    "thumbnailURL": null
+                },
+                {
+                    "formKUID": "ab67022ec71045db9bd6b0ff426620ec",
+                    "formName": "frmProfile",
+                    "isStartupForm": false,
+                    "key": "ab67022ec71045db9bd6b0ff426620ec",
+                    "loc": "8 624.7544921875",
+                    "thumbnailURL": null
+                }
+            ]
+        }
+    }
+}
